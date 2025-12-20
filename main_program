@@ -1,0 +1,51 @@
+print("WELCOME TO STORY LABS")
+print("------------------------")
+while True:
+    print("\nChoose a story type:")
+    print("1. Adventure Story")
+    print("2. Funny Food Story")
+    print("3. School Story")
+    print("4. Mystery Story")
+    print("5. Crazy Day Story")
+    choice = input("Enter 1 to 5: ")
+    print("\nEnter some words:\n")
+    name = input("Enter a name: ")
+    adjective = input("Enter an adjective: ")
+    noun = input("Enter a noun: ")
+    place = input("Enter a place: ")
+    verb = input("Enter a verb: ")
+    food = input("Enter a food: ")
+    print("\n----- YOUR STORY -----\n")
+    if choice == "1":
+        print("One day,", name, "went on an adventure to", place, ".")
+        print("There, they found a", adjective, noun , ".")
+        print(name, "decided to", verb, "it bravely.")
+        print("Suddenly, everything turned into", food , "!")
+        print(name, "became a hero.")
+    elif choice == "2":
+        print(name, "was eating", food, "at", place , ".")
+        print("Suddenly, a", adjective, noun, "came and", verb, "the food.")
+        print("Everyone laughed.")
+        print("It was the strangest food day ever.")
+    elif choice == "3":
+        print(name, "went to school feeling", adjective , ".")
+        print("In the classroom, a", noun, "started to", verb , ".")
+        print("The teacher sent everyone to", place , ".")
+        print("They celebrated with", food , ".")
+    elif choice == "4":
+        print("Late at night,", name, "went to", place , ".")
+        print("They saw a", adjective, noun, "there.")
+        print(name, "decided to", verb, "it carefully.")
+        print("The mystery ended with", food , ".")
+    elif choice == "5":
+        print("Today was a crazy day for", name , ".")
+        print("At", place , ", a", adjective, noun, "started to", verb , ".")
+        print("Nobody understood anything.")
+        print("The day ended with", food , ".")
+    else:
+        print("Invalid choice. No story created.")
+    print("\n----------------------")
+    again = input("Do you want to play again? (yes/no): ")
+    if again != "yes":
+        print("\nThanks for playing Story Labs!")
+        break
